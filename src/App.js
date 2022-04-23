@@ -1,11 +1,13 @@
 import React from "react";
+import {Switch, Route, Redirect} from 'react-router-dom';
+import Landing from 'pages/Landing'
 import "./style.css";
 
 export default function App() {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+    <Switch>
+      <Route exact path ="/" component={Landing} />
+
+    </Switch>
   );
 }
